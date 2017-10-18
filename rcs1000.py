@@ -1,5 +1,5 @@
 #!/usr/bin/env python2.7
-
+# Modul zur Steuerung Brennenstuhl
 import xx2262
 import sys
 import re
@@ -41,7 +41,7 @@ if sys.argv[3] == 'on':
   str += 'F'
 else:
   str += '0'
-  
+
 print "Sending", str
 
 data = xx2262.MakeFrame(str, 8)
